@@ -2,7 +2,7 @@ spring:
   datasource:
     password: 123456
     username: root
-    url: 'jdbc:mysql://localhost:3306/resources'
+    url: 'jdbc:mariadb://localhost:3306/resources'
   jpa:
     hibernate:
       ddl-auto: update
