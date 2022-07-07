@@ -1,2 +1,3 @@
-# configTests
-Test all environment settings
+# Environment configurations
+Repository (should be private) intended to gather all the settings related to the environment.
+For convenience, only the default is being used, but here we can also define between development, testing, approval, production, etc...
