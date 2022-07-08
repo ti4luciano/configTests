@@ -17,7 +17,7 @@ zuul:
       path: /spring-security-oauth-resource/**
       url: http://localhost:8089/spring-security-oauth-resource
     oauth:
-      path: /auth/**
+      path: /oauth/**
       url: http://localhost:8088/
       
 management:
