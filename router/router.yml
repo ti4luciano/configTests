@@ -1,18 +1,21 @@
-spring:
-  application:
-    name: 'router'
-
 eureka:
   client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone:  http://localhost:8761/eureka/
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    preferIpAddress: true
+
+spring:
+  application:
+    name: router
 zuul:
   sensitive-headers:
-  - Cookie, Authorization   
+  - Cookie, Authorization    
 management:
   endpoints:
     web:
       exposure:
-        include: routes
+        include:
+        - "routes"
